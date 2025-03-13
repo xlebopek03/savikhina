@@ -1,0 +1,587 @@
+
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Опрос по социологии и политологии</title>
+
+    <style>
+
+    body {
+
+            font-family: 'Arial', sans-serif;
+
+            background-color: #f4f4f9;
+
+            color: #333;
+
+            margin: 0;
+
+            padding: 20px;
+
+        }
+
+        h1 {
+
+            text-align: center;
+
+            color: #007bff;
+
+            font-size: 2.5em;
+
+            margin-bottom: 20px;
+
+        }
+
+        .survey-container {
+
+            max-width: 800px;
+
+            margin: 0 auto;
+
+            background: #fff;
+
+            padding: 20px;
+
+            border-radius: 10px;
+
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .question {
+
+            margin-bottom: 25px;
+
+        }
+
+        .question h2 {
+
+            font-size: 1.4em;
+
+            color: #007bff;
+
+            margin-bottom: 10px;
+
+        }
+
+        .options {
+
+            margin-left: 20px;
+
+        }
+
+        .options label {
+
+            display: block;
+
+            margin: 10px 0;
+
+            font-size: 1.1em;
+
+        }
+
+        .options input {
+
+            margin-right: 10px;
+
+        }
+
+        button {
+
+            display: block;
+
+            margin: 20px auto;
+
+            padding: 10px 20px;
+
+            font-size: 1.2em;
+
+            color: #fff;
+
+            background-color: #007bff;
+
+            border: none;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+            transition: background-color 0.3s ease;
+
+        }
+
+        button:hover {
+
+            background-color: #0056b3;
+
+        }
+
+        .result {
+
+            margin-top: 40px;
+
+            text-align: center;
+
+        }
+
+        .result h2 {
+
+            color: #007bff;
+
+            font-size: 2em;
+
+            margin-bottom: 20px;
+
+        }
+
+        svg {
+
+            margin-top: 20px;
+
+            background: #fff;
+
+            border-radius: 10px;
+
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .bar {
+
+            transition: height 0.5s ease, y 0.5s ease;
+
+        }
+
+        .bar:hover {
+
+            opacity: 0.8;
+
+        }
+
+    </style>
+
+<script type="text/javascript" nonce="d790d10e7fb844bdb3a8e2e61bf" src="//local.adguard.org?ts=1741783501127&amp;type=content-script&amp;dmn=eashumilova.github.io&amp;url=https%3A%2F%2Feashumilova.github.io%2Findex.html%2Fopros.html&amp;app=chrome.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1"></script>
+<script type="text/javascript" nonce="d790d10e7fb844bdb3a8e2e61bf" src="//local.adguard.org?ts=1741783501127&amp;name=AdGuard%20Assistant&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script></head>
+
+<body>
+
+    <h1>Опрос по социологии и политологии</h1>
+
+ 
+
+    <div class="result" id="results" style="display: none;">
+
+        <h2>Результаты опроса</h2>
+
+        <svg 10</text>
+
+        </svg>
+
+    </div>
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>
+
+
+<!-- Форма опроса -->
+
+    <div class="survey-container">
+
+        <form id="surveyForm">
+
+            <!-- Вопрос 1 -->
+
+            <div class="question">
+
+                <h2>1. Как вы относитесь к социологии?</h2>
+
+                <div class="options">
+
+                    <label><input type="radio" name="sociology" value="3" required> Положительно</label>
+
+                    <label><input type="radio" name="sociology" value="2"> Нейтрально</label>
+
+                    <label><input type="radio" name="sociology" value="1"> Отрицательно</label>
+
+                </div>
+
+            </div>
+
+ 
+
+            <!-- Вопрос 2 -->
+
+            <div class="question">
+
+                <h2>2. Как вы относитесь к политологии?</h2>
+
+                <div class="options">
+
+                    <label><input type="radio" name="politicalScience" value="3" required> Положительно</label>
+
+                    <label><input type="radio" name="politicalScience" value="2"> Нейтрально</label>
+
+                    <label><input type="radio" name="politicalScience" value="1"> Отрицательно</label>
+
+                </div>
+
+            </div>
+
+ 
+
+            <!-- Вопрос 3 -->
+
+            <div class="question">
+
+                <h2>3. Как вы оцениваете роль социологии в современном обществе?</h2>
+
+                <div class="options">
+
+                    <label><input type="radio" name="sociologyRole" value="3" required> Высокая</label>
+
+                    <label><input type="radio" name="sociologyRole" value="2"> Средняя</label>
+
+                    <label><input type="radio" name="sociologyRole" value="1"> Низкая</label>
+
+                </div>
+
+            </div>
+
+ 
+
+            <!-- Вопрос 4 -->
+
+            <div class="question">
+
+                <h2>4. Как вы оцениваете роль политологии в современном обществе?</h2>
+
+                <div class="options">
+
+                    <label><input type="radio" name="politicalScienceRole" value="3" required> Высокая</label>
+
+                    <label><input type="radio" name="politicalScienceRole" value="2"> Средняя</label>
+
+                    <label><input type="radio" name="politicalScienceRole" value="1"> Низкая</label>
+
+                </div>
+
+            </div>
+
+ 
+
+            <!-- Вопрос 5 -->
+
+            <div class="question">
+
+                <h2>5. Как вы считаете, социология помогает решать социальные проблемы?</h2>
+
+                <div class="options">
+
+                    <label><input type="radio" name="sociologyProblems" value="3" required> Да</label>
+
+                    <label><input type="radio" name="sociologyProblems" value="1"> Нет</label>
+
+                </div>
+
+            </div>
+
+ 
+
+            <!-- Вопрос 6 -->
+
+            <div class="question">
+
+                <h2>6. Как вы считаете, политология помогает понимать политические процессы?</h2>
+
+                <div class="options">
+
+                    <label><input type="radio" name="politicalScienceProcesses" value="3" required> Да</label>
+
+                    <label><input type="radio" name="politicalScienceProcesses" value="1"> Нет</label>
+
+                </div>
+
+            </div>
+
+ 
+
+            <!-- Вопрос 7 -->
+
+            <div class="question">
+
+                <h2>7. Как вы оцениваете уровень политической активности в вашей стране?</h2>
+
+                <div class="options">
+
+                    <label><input type="radio" name="politicalActivity" value="3" required> Высокий</label>
+
+                    <label><input type="radio" name="politicalActivity" value="2"> Средний</label>
+
+                    <label><input type="radio" name="politicalActivity" value="1"> Низкий</label>
+
+                </div>
+
+            </div>
+
+ 
+
+            <!-- Вопрос 8 -->
+
+            <div class="question">
+
+                <h2>8. Как вы оцениваете уровень социального неравенства в вашей стране?</h2>
+
+                <div class="options">
+
+                    <label><input type="radio" name="socialInequality" value="3" required> Высокий</label>
+
+                    <label><input type="radio" name="socialInequality" value="2"> Средний</label>
+
+                    <label><input type="radio" name="socialInequality" value="1"> Низкий</label>
+
+                </div>
+
+            </div>
+
+ 
+
+            <!-- Вопрос 9 -->
+
+            <div class="question">
+
+                <h2>9. Как вы считаете, социология и политология взаимосвязаны?</h2>
+
+                <div class="options">
+
+                    <label><input type="radio" name="interconnection" value="3" required> Да</label>
+
+                    <label><input type="radio" name="interconnection" value="1"> Нет</label>
+
+                </div>
+
+            </div>
+
+ 
+
+            <!-- Вопрос 10 -->
+
+            <div class="question">
+
+                <h2>10. Как вы оцениваете влияние социологии на политические решения?</h2>
+
+                <div class="options">
+
+                    <label><input type="radio" name="sociologyInfluence" value="3" required> Высокое</label>
+
+                    <label><input type="radio" name="sociologyInfluence" value="2"> Среднее</label>
+
+                    <label><input type="radio" name="sociologyInfluence" value="1"> Низкое</label>
+
+                </div>
+
+            </div>
+
+ 
+
+            <button type="button" onclick="showResults()">Показать результаты</button>
+
+        </form>
+
+    </div>
+
+<!-- Результаты опроса -->
+
+    <div class="result" id="results" style="display: none;">
+
+        <h2>Результаты опроса</h2>
+
+        <svg id="chart" width="800" height="400">
+
+            <!-- Оси -->
+
+            <line x1="50" y1="350" x2="750" y2="350" stroke="black" stroke-width="2" />
+
+            <line x1="50" y1="350" x2="50" y2="50" stroke="black" stroke-width="2" />
+
+ 
+
+            <!-- Подписи осей -->
+
+            <text x="400" y="390" text-anchor="middle">Вопросы</text>
+
+            <text x="20" y="200" text-anchor="middle" transform="rotate(-90, 20, 200)">Количество</text>
+
+ 
+
+            <!-- Столбцы -->
+
+            <rect id="bar1" x="70" y="350" width="40" height="0" fill="#007bff" class="bar" />
+
+            <rect id="bar2" x="130" y="350" width="40" height="0" fill="#28a745" class="bar" />
+
+            <rect id="bar3" x="190" y="350" width="40" height="0" fill="#dc3545" class="bar" />
+
+            <rect id="bar4" x="250" y="350" width="40" height="0" fill="#ffc107" class="bar" />
+
+            <rect id="bar5" x="310" y="350" width="40" height="0" fill="#17a2b8" class="bar" />
+
+            <rect id="bar6" x="370" y="350" width="40" height="0" fill="#6610f2" class="bar" />
+
+            <rect id="bar7" x="430" y="350" width="40" height="0" fill="#fd7e14" class="bar" />
+
+            <rect id="bar8" x="490" y="350" width="40" height="0" fill="#6f42c1" class="bar" />
+
+            <rect id="bar9" x="550" y="350" width="40" height="0" fill="#e83e8c" class="bar" />
+
+            <rect id="bar10" x="610" y="350" width="40" height="0" fill="#20c997" class="bar" />
+
+ 
+
+            <!-- Подписи столбцов -->
+
+            <text x="90" y="370" text-anchor="middle">1</text>
+
+            <text x="150" y="370" text-anchor="middle">2</text>
+
+            <text x="210" y="370" text-anchor="middle">3</text>
+
+            <text x="270" y="370" text-anchor="middle">4</text>
+
+            <text x="330" y="370" text-anchor="middle">5</text>
+
+            <text x="390" y="370" text-anchor="middle">6</text>
+
+            <text x="450" y="370" text-anchor="middle">7</text>
+
+            <text x="510" y="370" text-anchor="middle">8</text>
+
+            <text x="570" y="370" text-anchor="middle">9</text>
+
+            <text x="630" y="370" text-anchor="middle">10</text>
+
+        </svg>
+
+    </div>
+
+<script>
+
+        function showResults() {
+
+            const form = document.getElementById('surveyForm');
+
+            const results = {
+
+                sociology: 0,
+
+                politicalScience: 0,
+
+                sociologyRole: 0,
+
+                politicalScienceRole: 0,
+
+                sociologyProblems: 0,
+
+                politicalScienceProcesses: 0,
+
+                politicalActivity: 0,
+
+                socialInequality: 0,
+
+                interconnection: 0,
+
+                sociologyInfluence: 0
+
+            };
+
+ 
+
+            // Подсчет результатов
+
+            results.sociology = parseInt(form.querySelector('input[name="sociology"]:checked').value);
+
+            results.politicalScience = parseInt(form.querySelector('input[name="politicalScience"]:checked').value);
+
+            results.sociologyRole = parseInt(form.querySelector('input[name="sociologyRole"]:checked').value);
+
+            results.politicalScienceRole = parseInt(form.querySelector('input[name="politicalScienceRole"]:checked').value);
+
+            results.sociologyProblems = parseInt(form.querySelector('input[name="sociologyProblems"]:checked').value);
+
+            results.politicalScienceProcesses = parseInt(form.querySelector('input[name="politicalScienceProcesses"]:checked').value);
+
+            results.politicalActivity = parseInt(form.querySelector('input[name="politicalActivity"]:checked').value);
+
+            results.socialInequality = parseInt(form.querySelector('input[name="socialInequality"]:checked').value);
+
+            results.interconnection = parseInt(form.querySelector('input[name="interconnection"]:checked').value);
+
+            results.sociologyInfluence = parseInt(form.querySelector('input[name="sociologyInfluence"]:checked').value);
+
+ 
+
+            // Обновление высоты столбцов
+
+            const bars = document.querySelectorAll('.bar');
+
+            bars[0].setAttribute('height', results.sociology * 30);
+
+            bars[0].setAttribute('y', 350 - results.sociology * 30);
+
+            bars[1].setAttribute('height', results.politicalScience * 30);
+
+            bars[1].setAttribute('y', 350 - results.politicalScience * 30);
+
+            bars[2].setAttribute('height', results.sociologyRole * 30);
+
+            bars[2].setAttribute('y', 350 - results.sociologyRole * 30);
+
+            bars[3].setAttribute('height', results.politicalScienceRole * 30);
+
+            bars[3].setAttribute('y', 350 - results.politicalScienceRole * 30);
+
+            bars[4].setAttribute('height', results.sociologyProblems * 30);
+
+            bars[4].setAttribute('y', 350 - results.sociologyProblems * 30);
+
+            bars[5].setAttribute('height', results.politicalScienceProcesses * 30);
+
+            bars[5].setAttribute('y', 350 - results.politicalScienceProcesses * 30);
+
+            bars[6].setAttribute('height', results.politicalActivity * 30);
+
+            bars[6].setAttribute('y', 350 - results.politicalActivity * 30);
+
+            bars[7].setAttribute('height', results.socialInequality * 30);
+
+            bars[7].setAttribute('y', 350 - results.socialInequality * 30);
+
+            bars[8].setAttribute('height', results.interconnection * 30);
+
+            bars[8].setAttribute('y', 350 - results.interconnection * 30);
+
+            bars[9].setAttribute('height', results.sociologyInfluence * 30);
+
+            bars[9].setAttribute('y', 350 - results.sociologyInfluence * 30);
+
+ 
+
+            // Показ результатов
+
+            document.getElementById('results').style.display = 'block';
+
+        }
+
+    </script>
+
